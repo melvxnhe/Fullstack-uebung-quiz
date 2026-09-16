@@ -1,0 +1,69 @@
+
+
+body {
+
+background-color: #6C5B7B;
+
+} 
+
+
+.Author {
+    display: block;
+    position: relative;
+    color: #F8B195;
+    text-align: center; 
+    visibility: hidden;
+    
+    
+}
+
+.Header {
+display:block;
+position: relative;
+color: #F67280;
+text-align: center;
+
+
+}
+.Header:hover {
+
+transform:scale(1.05);
+transition: transform 0.6s ease-in-out;
+}
+
+.Header:hover + .Author{
+    transform: scale(1.05);
+    
+    transition: transform 0.6s ease-in-out;
+    
+ 
+    visibility: visible;
+}
+
+.startbutton {
+background-color:#F67280;
+color:white;
+display:block;
+margin-left: auto;
+margin-right: auto;
+padding:15px;
+position:relative;
+
+align-items: center;
+transform: translateY(200px)  scale(3);
+
+border:none;
+border-radius: 19%;
+transition: background .3 ease;
+cursor:pointer
+
+
+}
+
+.startbutton:hover {
+
+background-color: #F69280;
+
+
+
+}
