@@ -6,6 +6,58 @@ background-color: #6C5B7B;
 
 } 
 
+.Fragen {
+
+visibility:hidden;
+
+}
+
+.Q1A1 {
+
+visibility: hidden;
+
+}
+.Q1A2 {
+
+visibility: hidden;
+
+}
+.Q1A3 {
+
+visibility: hidden;
+
+}
+.Frage1 {
+
+text-align: center;
+
+}
+
+.RainerContainer {
+  position: absolute;
+  top: 100px;
+  left: 0;
+
+  width: 100%;
+  height: 0;
+
+  pointer-events: none;
+    
+}
+
+.Rainer {
+  position: absolute;
+
+  top: -150px;
+  left: -80vw;
+
+  width: 100%;
+
+  transform: scale(0.2);
+  transition: transform 0.6s ease-in-out;
+
+
+}
 
 .Author {
     display: block;
@@ -31,6 +83,46 @@ transform:scale(1.05);
 transition: transform 0.6s ease-in-out;
 }
 
+.Header:hover ~ .RainerContainer  {
+
+transform:translateX(20vw);
+
+}
+
+@keyframes slideInAuthor {
+
+from {
+
+transform:scale(0.1)
+
+}
+
+to {
+
+transform: scale(1);
+
+}
+
+}
+
+
+@keyframes slideInRainer {
+
+    from {
+
+            transform: translateX(-30vw) scale(0.2);
+        
+    }
+
+to {
+
+    transform: translateX(20vw) scale(0.2);
+
+}
+
+}
+
+
 .Header:hover + .Author{
     transform: scale(1.05);
     
@@ -38,6 +130,7 @@ transition: transform 0.6s ease-in-out;
     
  
     visibility: visible;
+    animation: slideInAuthor 1s ease-in-out forwards ;
 }
 
 .startbutton {
@@ -50,8 +143,8 @@ padding:15px;
 position:relative;
 
 align-items: center;
-transform: translateY(200px)  scale(3);
-
+transform:   scale(3);
+margin: 200px auto 0;
 border:none;
 border-radius: 19%;
 transition: background .3 ease;
@@ -63,7 +156,15 @@ cursor:pointer
 .startbutton:hover {
 
 background-color: #F69280;
+transform: scale(3.1);
+    
+    transition: transform 0.6s ease-in-out;
 
 
+}
+.Header:hover ~ .RainerContainer .Rainer {
+
+
+animation: slideInRainer 1.5s ease-in-out forwards;
 
 }
