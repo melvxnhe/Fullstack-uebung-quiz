@@ -3,6 +3,7 @@ const button = document.querySelector(".startbutton");
 const header = document.querySelector(".Header");
 const rainer = document.querySelector(".RainerContainer");
 const author = document.querySelector(".Author");
+const fent   = document.querySelector(".Fent") 
 
 const frage1 = document.querySelector(".Frage1");
 const q1a1   = document.querySelector(".Q1A1 button");
@@ -47,7 +48,11 @@ frage1.style.visibility = "visible";
 q1a1.style.visibility = "visible";
 q1a2.style.visibility = "visible";
 q1a3.style.visibility = "visible";
+fent.style.visibility = "visible";
+
 let q1 = true;
+
+
 })
  let geantwortet = false;
 document.addEventListener("click", function(event) {
@@ -59,7 +64,7 @@ if(event.target === q1a1) {
 
     q1a1.style.backgroundColor ="green";
         geantwortet = true;
-
+         
 } else if(event.target === q1a2 || event.target == q1a3) {
 
     const targets = event.target;

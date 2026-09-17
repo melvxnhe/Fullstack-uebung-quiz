@@ -6,7 +6,19 @@ background-color: #6C5B7B;
 
 } 
 
+.Minus15 {
+
+position:absolute;
+visibility: hidden;
+}
+
+.Plus15 {
+
+position: absolute;
+visibility: hidden;
+}
 .Fragen {
+
 
 visibility:hidden;
 
@@ -70,6 +82,19 @@ text-align: center;
   transform: scale(0.2);
   transition: transform 0.6s ease-in-out;
 
+
+}
+
+.Fent {
+position:absolute;
+display: block;
+
+    transform: scale(0.4) translateY(-30vw);
+    
+    width: 100%;
+    
+
+visibility:hidden ;
 
 }
 
@@ -148,6 +173,7 @@ to {
 }
 
 .startbutton {
+    width: 100;
 background-color:#F67280;
 color:white;
 display:block;
