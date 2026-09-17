@@ -10,6 +10,11 @@ const q1a1   = document.querySelector(".Q1A1 button");
 const q1a2   = document.querySelector(".Q1A2 button");
 const q1a3   = document.querySelector(".Q1A3 button");
 
+const counter = document.querySelector(".Counter")
+
+let n = 0
+counter.textContent = ("Korrekt: 0")
+
 let q1 = false;
 let q2 = false;
 let q3 = false;
@@ -40,9 +45,9 @@ let AntwortD4 = false;
 button.addEventListener("click", function() {
 
 header.textContent = "1) Drogen & Sinologen";
-button.style.display = "none";
-rainer.style.display = "none";
-author.style.display = "none";
+button.style.visibility = "hidden";
+rainer.style.visibility = "hidden";
+author.style.visibility = "hidden";
 
 frage1.style.visibility = "visible";
 q1a1.style.visibility = "visible";
@@ -63,8 +68,10 @@ document.addEventListener("click", function(event) {
 if(event.target === q1a1) {
 
     q1a1.style.backgroundColor ="green";
+
+        n++;
         geantwortet = true;
-         
+        counter.textContent = ("Korrekt: " + n);
 } else if(event.target === q1a2 || event.target == q1a3) {
 
     const targets = event.target;
