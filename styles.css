@@ -11,10 +11,24 @@ background-color: #6C5B7B;
 visibility:hidden;
 
 }
+.Frage1Knöpfe {
+display:flex;
+justify-content: center;
+transform:translateY(25vw);
+gap: 20vw;
+
+}
+
+.Frage1Knöpfe buttons {
+
+    position:relative;
+    
+}
 
 .Q1A1 {
 
 visibility: hidden;
+
 
 }
 .Q1A2 {
